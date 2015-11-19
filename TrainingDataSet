@@ -1,0 +1,9 @@
+Create files with multipple training emails.
+
+Alternately,
+download a sample dataset from
+https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection and download the zip file. Unzip it under data subdirectory.
+
+messages = [line.rstrip() for line in open('./data/SMSSpamCollection')]
+print len(messages)
+
