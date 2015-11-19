@@ -1,4 +1,4 @@
-#imports
+
 
 from nltk import word_tokenize,WordNetLemmatizer,NaiveBayesClassifier,classify,MaxentClassifier
 from nltk.corpus import stopwords
@@ -10,7 +10,7 @@ import os, glob,re
 commonwords = stopwords.words('english')
 wordlemmatizer = WordNetLemmatizer()
 
-# spam filer function
+
 def email_features(sent):
 	features = {}
 	wordtokens = [wordlemmatizer.lemmatize(word.lower()) for word in word_tokenize(sent)]
